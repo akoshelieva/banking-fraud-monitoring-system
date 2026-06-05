@@ -1,0 +1,12 @@
+# PostgreSQL / local runtime
+*.log
+*.tmp
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Generated archives
+*.zip
