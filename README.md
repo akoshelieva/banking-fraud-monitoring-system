@@ -419,25 +419,3 @@ SELECT fraud_monitoring.mask_card_number('4111111111111111');
 * The project uses synthetic data and does not require external datasets.
 * The materialized view is refreshed after sample data insertion.
 
----
-
-## Evaluation Mapping
-
-| Assignment Category          | Implemented In                         |
-| ---------------------------- | -------------------------------------- |
-| Constraints & Data Integrity | `schema_and_domains.sql`, `tables.sql` |
-| Functions                    | `functions.sql`                        |
-| Stored Procedures            | `procedures.sql`                       |
-| Trigger Logic                | `triggers.sql`                         |
-| Views                        | `views.sql`                            |
-| Materialized Views           | `materialized_views.sql`               |
-| Sample Data                  | `data_insertion.sql`                   |
-| Demo Queries                 | `queries.sql`                          |
-| Bonus Scheduled Refresh      | `pg_cron.sql`                          |
-| Documentation                | `README.md`                            |
-
----
-
-## Notes
-
-This implementation is intentionally minimal and focused on the assignment requirements. The fraud detection logic is simplified, but it demonstrates how PostgreSQL tables, constraints, functions, procedures, triggers, views, and materialized views can work together in a banking fraud monitoring system.
